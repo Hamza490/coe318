@@ -1,0 +1,43 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+24
+-sourcepath
+'C:/Users/Muham/Desktop/repos/coe318/Lab1/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Muham/Desktop/repos/coe318/Lab1/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Lab1 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Lab1 1.0-SNAPSHOT API'
+coe318.lab1
+com.mycompany.lab1
+C:\Users\Muham\Desktop\repos\coe318\Lab1\src\main\java = 1746725022600
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\allclasses-index.html = 1746725099538
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\allpackages-index.html = 1746725099543
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\element-list = 1746725099461
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\help-doc.html = 1746725099576
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\index-all.html = 1746725099564
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\index.html = 1746725099526
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\member-search-index.js = 1746725099552
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\module-search-index.js = 1746725099545
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\overview-summary.html = 1746725099572
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\overview-tree.html = 1746725099520
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\package-search-index.js = 1746725099548
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\search.html = 1746725099568
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\tag-search-index.js = 1746725099554
+C:\Users\Muham\Desktop\repos\coe318\Lab1\target\reports\apidocs\type-search-index.js = 1746725099550
