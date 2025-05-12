@@ -1,82 +1,39 @@
-/**
- * A Resistor models an ideal resistor that obeys Ohm's Law.
- *
- * @author YourName
- */
+
 package coe318.lab1;
 
 public class Resistor {
     //Instance (state) variables  
-    //TODO Add instance variables (Hint: you only need 2!)
     double  r;
+    double i;
 
-    /**
-     * Create an ideal Resistor. The initial current through and voltage across
-     * the Resistor are zero.
-     *
-     * @param resistance resistance in Ohms
-     */
     public Resistor(double resistance) {
         //Set values of state variables
         r = resistance;
+        i = 0.0;
     }
 
-    /**
-     * Returns the value of the resistor in Ohms.
-     *
-     * @return the resistance
-     */
     public double getResistance() {
-        //FIX THIS so that it returns the actual resistance
         return r;
     }
 
-    /**
-     * Returns the voltage across the resistor.
-     *
-     * @return the voltage
-     */
     public double getVoltage() {
-        //FIX THIS so that it returns the actual voltage
-        return 0.0;
+        return i*r;
     }
 
-    /**
-     * Sets the value of the voltage across the resistor.
-     *
-     * @param voltage the voltage to set
-     */
     public void setVoltage(double voltage) {
-        //FIX THIS
+        i = voltage/r;
     }
 
-    /**
-     * Returns the current through the Resistor.
-     *
-     * @return the current
-     */
     public double getCurrent() {
-        //FIX THIS
-        return 0.0;
+        return i;
     }
 
-    /**
-     * Sets the value of the current through the resistor.
-     *
-     * @param current the current to set
-     */
     public void setCurrent(double current) {
-        //FIX THIS
+        i = current;
     }
 
-    /**
-     * Returns the power (in Watts) dissipated by the Resistor.
-     *
-     * @return the power
-     */
     public double getPower() {
-        //FIX THIS
-        return 0.0;
+        return (i*r)*i;
     }
 
     /**
@@ -101,6 +58,7 @@ public class Resistor {
      *
      * @param args (Command line arguments not used.)
      */
+
     public static void main(String[] args) {
         Resistor r1, r2;
         System.out.println("Creating a 50 Ohm resistor (r1)");
