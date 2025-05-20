@@ -1,4 +1,4 @@
-package coe318.lab2;
+package coe318.Lab2ComplexNumber;
 
 public class ComplexNumber {
  //Instance variable declarations
