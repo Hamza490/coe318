@@ -1,5 +1,5 @@
 
-package coe318.lab1;
+package lab1.netbeans;
 
 public class Resistor {
     //Instance (state) variables  
