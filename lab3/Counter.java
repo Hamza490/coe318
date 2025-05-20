@@ -2,57 +2,51 @@ package coe318.lab3;
 
 public class Counter {
     //Instance variables here
+    private int modulus;
+    private Counter left;
+    private int dig;
+
     public Counter(int modulus, Counter left) {
-        
+      this.modulus = modulus;
+      this.left = left;
     }
 
-
-    /**
-     * @return the modulus
-     */
     public int getModulus() {
-        return 1;
+        return modulus;
     }
 
-    /**
-     * Returns the Counter to the left attached to this
-     * Counter.  Returns null if there is no Counter
-     * to the left.
-     * @return the left
-     */
     public Counter getLeft() {
-        return null;
+        return left;
     }
 
-    /**
-     * @return the digit
-     */
     public int getDigit() {
-        return 1;
+        return dig;
     }
 
-    /**
-     * @param digit the digit to set
-     */
     public void setDigit(int digit) {
+      dig = digit;
     }
 
-    /**
-     * Increment this counter.  If it rolls over,
-     * its left Counter is also incremented if it
-     * exists.
-     */
     public void increment() {
-    
-    }
+      if(this.dig<modulus-1){
+        dig++;
+      } 
+      else{
+        if(left!=null){
+          dig = 0;
+          left.increment();
+        } else{
+          dig = 0;
+        }
+      }
+      }
 
-    /** Return the count of this Counter combined
-     * with any Counter to its left.
-     *
-     * @return the count
-     */
     public int getCount() {
-        return 1;
+      if (left == null) {
+          return dig;
+      } else {
+          return left.getCount() * modulus + dig;
+      }
     }
 
     /** Returns a String representation of the Counter's
